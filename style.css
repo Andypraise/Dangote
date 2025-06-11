@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  z-index: 2;
+  background: rgba(51, 51, 51, 0.3);
+}
+
+.logo img {
+  width: 110px;
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+}
+
+/* Dropdown menu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 180px;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  padding: 7px 20px;
+}
+
+nav ul li ul li a {
+  color: white;
+  display: block;
+}
+
+nav ul li ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* styling hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: left;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-content a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+.menu {
+  display: none;
+}
+/* styling main */
+main {
+  padding: 30px;
+  margin-top: 100px;
+}
+.need {
+  width: 500px;
+  height: 400px;
+  padding: 50px;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(221, 218, 218);
+}
+.need h2 {
+  color: rgb(16, 16, 104);
+  font-size: 30px;
+  padding-top: 30px;
+}
+.need p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.need a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: red;
+  font-size: 12px;
+}
+.business {
+  text-align: center;
+  padding-top: 13rem;
+}
+.business h2 {
+  font-size: 35px;
+  color: rgb(16, 16, 104);
+}
+.business p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.style-all {
+  display: flex;
+  flex-direction: column;
+}
+
+.cement {
+  display: flex;
+  flex-direction: row;
+  padding-left: 13rem;
+  padding-top: 20px;
+}
+.img {
+  margin-right: 20px;
+  margin-top: 7px;
+  background-color: white;
+  cursor: pointer;
+}
+.img img {
+  border-radius: none;
+}
+.img p {
+  color: rgb(16, 16, 104);
+  font-weight: 700;
+}
+.img:hover {
+  scale: 1;
+  box-shadow: 4px 4px 4px 4px rgb(216, 211, 211);
+}
+.link {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.link a {
+  width: 70px;
+  height: 36px;
+  padding: 5px;
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(16, 16, 104);
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(124, 123, 123);
+  border-radius: 3px 0 0 3px;
+}
+.link button {
+  width: 50px;
+  height: 37px;
+  padding: 15px;
+  background-color: rgb(12, 12, 156);
+  border: none;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 2px 2px 2px 2px white;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .hero {
+    width: 290vw;
+  }
+  .business h2 {
+    text-align: center;
+  }
+
+  .img {
+    width: 60vw;
+    margin-left: 40px;
+  }
+  .menu {
+    display: block;
+  }
+  .menu img {
+    width: 50px;
+    height: 40px;
+  }
+}
